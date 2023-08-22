@@ -1,14 +1,16 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, Switch} from 'react-native';
-import CustomButton from './componets/CustomButton';
+import {View, StyleSheet, Appearance} from 'react-native';
+
+import Button from './scr/components/Button';
 
 //functions
-import {btns} from './functions/buttons';
-import Calculator from './screens/calculator';
+
 const App = () => {
+  // const colorScheme = Appearance.getColorScheme();
+
   return (
     <View style={styles.container}>
-      <Calculator />
+     
     </View>
   );
 };
