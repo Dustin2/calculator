@@ -50,21 +50,27 @@ export const Styles = StyleSheet.create({
   row: {
     maxWidth: '100%',
     flexDirection: 'row',
+    
   },
   viewBottom: {
+    // marginTop:50,
     position: 'absolute',
     bottom: 50,
+    
   },
   screenFirstNumber: {
     fontSize: 96,
     color: Colors.gray,
     fontWeight: '200',
     alignSelf: 'flex-end',
+    
+  
   },
   screenSecondNumber: {
     fontSize: 40,
     color: Colors.gray,
     fontWeight: '200',
     alignSelf: 'flex-end',
+    
   },
 });
