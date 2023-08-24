@@ -97,7 +97,7 @@ export default function CustomKeyboard() {
           width: '90%',  
           justifyContent: 'flex-end',
           alignSelf: 'center',
-          // backgroundColor:"red"
+           backgroundColor:"red"
         }}>
         <Text style={Styles.screenSecondNumber}>
           {secondNumber}
