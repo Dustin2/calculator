@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import React, {useState} from 'react';
+import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 
 const Calculator = () => {
   const [input, setInput] = useState('');
   const [result, setResult] = useState('');
 
-  const handlePress = (value) => {
+  const handlePress = value => {
     if (value === '=') {
       try {
         const evalResult = eval(input);
@@ -23,19 +23,30 @@ const Calculator = () => {
 
   const renderButtons = () => {
     const buttons = [
-      '7', '8', '9', '/',
-      '4', '5', '6', '*',
-      '1', '2', '3', '-',
-      '0', '.', '=', '+',
-      'C'
+      'AC',
+      'C',
+      '9',
+      '/',
+      '4',
+      '5',
+      '6',
+      '*',
+      '1',
+      '2',
+      '3',
+      '-',
+      '0',
+      '.',
+      '=',
+      '+',
+      
     ];
 
-    return buttons.map((button) => (
+    return buttons.map(button => (
       <TouchableOpacity
         key={button}
         style={styles.button}
-        onPress={() => handlePress(button)}
-      >
+        onPress={() => handlePress(button)}>
         <Text style={styles.buttonText}>{button}</Text>
       </TouchableOpacity>
     ));
@@ -55,26 +66,31 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    
   },
   result: {
     fontSize: 36,
     marginBottom: 10,
+    
   },
   input: {
-    fontSize: 24,
+    fontSize: 35,
     marginBottom: 20,
+   
   },
   buttonsContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     borderWidth: 0,
+    backgroundColor: 'white',
   },
   button: {
-    width: '25%',
+    width: '30%',
     alignItems: 'center',
     paddingVertical: 20,
-    borderWidth: 1,
-    borderColor: '#ccc',
+    marginBottom: 2,
+    backgroundColor: "red"
+
   },
   buttonText: {
     fontSize: 24,
@@ -82,3 +98,4 @@ const styles = StyleSheet.create({
 });
 
 export default Calculator;
+//https://resume.io/r/LCKxoTxjb cv
